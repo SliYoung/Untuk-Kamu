@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6347;
+            margin-bottom: 15px;
+            font-size: 2em; /* Ukuran font lebih kecil */
+        }
+        p {
+            font-size: 10px;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .button-container a {
+            text-decoration: none;
+            margin: 5px;
+        }
+        button {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: float 6s infinite;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+        .animated-gif {
+            margin-top: 20px;
+            max-width: 30%; /* Maksimum lebar gambar */
+            height: auto; /* Tinggi gambar menyesuaikan proporsi */
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(45deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 16px;
+                text-align: justify;
+            }
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">
+        <!-- Animasi hati-hati di sini -->
+        <div class="heart" style="left: 10%; animation-duration: 7s;"></div>
+        <div class="heart" style="left: 30%; animation-duration: 5s; animation-delay: 1s;"></div>
+        <div class="heart" style="left: 50%; animation-duration: 6s; animation-delay: 2s;"></div>
+        <div class="heart" style="left: 70%; animation-duration: 4s; animation-delay: 3s;"></div>
+        <div class="heart" style="left: 90%; animation-duration: 8s; animation-delay: 4s;"></div>
+    </div>
+    <div class="container">
+        <h1>Hai Ziaa</h1>
+        <!-- Ganti 'Pernya.gif' dengan URL gambar animasi yang Anda inginkan -->
+        <img src="Pernya.gif" alt="Animated GIF" class="animated-gif">
+        <p>Jadi, Fasly ingin mengatakan sesuatu walaupun hanya sekadar lewat web biasa seperti ini. Mungkin mengatakan sesuatu lewat telepon, chat, atau ketemu(belum bisa) mungkin sudah pernah. Jadi, untuk pertama kali mencoba hal yang lebih baru, Fasly tahu bahwa Ziaa dalam menjawab chat fast respon, walaupun singkat, itu adalah tantangan mungkin Hhh 😂😂. Semoga bisa dirubah. Jadi, Fasly ingin mengatakan sesuatu, sebuah perasaan, dan ingin tahu apakah kamu merasakan hal yang sama. Aku tahu mungkin ini mendadak, jadi tidak perlu menjawab sekarang. Aku hanya ingin kamu tahu perasaanku. Apapun jawabanmu, we are still best friends💗💗💗.</p>
+        <div class="button-container">
+            <a href="https://wa.me/6281277407483?text=Aku%20juga%20sayang%20kamu!" target="_blank"><button>Ya, Aku Mau</button></a>
+            <a href="https://wa.me/6281277407483?text=Maaf,%20mungkin%20kita%20bisa%20tetap%20berteman." target="_blank"><button>Maaf, Tidak Bisa</button></a>
+        </div>
+    </div>
+     <!-- Audio background music -->
+     <audio autoplay loop>
+        <source src="Y2meta.app - Stephanie Poetri - I Love You 3000 (Official Music Video) (128 kbps).mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung elemen audio.
+    </audio>
+    <script>
+        // Ganti 'nomor-telepon' dengan nomor WhatsApp kamu, misalnya: 6281234567890 untuk nomor Indonesia.
+        const heartsContainer = document.querySelector('.hearts');
+        for (let i = 0; i < 30; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.animationDuration = `${4 + Math.random() * 4}s`;
+            heart.style.animationDelay = `${Math.random() * 2}s`;
+            heartsContainer.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
